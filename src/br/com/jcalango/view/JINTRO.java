@@ -67,3 +67,4 @@ public class JINTRO extends JFrame {
         setVisible(true);
     }
 }
+//Jesus te ama!!!!¹ Ainda que eu falasse as línguas dos homens e dos anjos, e não tivesse amor, seria como o metal que soa ou como o sino que tine.
