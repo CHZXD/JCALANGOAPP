@@ -9,7 +9,7 @@ import br.com.jcalango.view.JSplash;
 public class App {
 
     public static void main(String[] args) throws Exception {
-       /* new JINTRO();
+
         formiga f = new formiga();
         f.mover();
         f.fazerSom();
@@ -30,7 +30,7 @@ public class App {
         a.fazerSom();
         a.dormir();
         a.comer();
-        JOptionPane.showMessageDialog(null, a.tabelaFinal());*/
+        JOptionPane.showMessageDialog(null, a.tabelaFinal());
         new JINTRO();
 
         

@@ -24,12 +24,12 @@ public class JINTRO extends JFrame {
                         + "Esta casa... não está vazia. Ela sente. Ela espera.\n"
                         + "E cada quarto que você abre, ela se lembra mais de você.";
 
-                // Criando painel personalizado
+                
                 JPanel painel = new JPanel(new BorderLayout());
                 painel.setBackground(Color.BLACK);
                 painel.setPreferredSize(new Dimension(400, 200));
 
-                // Caixa de texto
+                
                 JTextArea areaTexto = new JTextArea(narracao);
                 areaTexto.setWrapStyleWord(true);
                 areaTexto.setLineWrap(true);
@@ -39,26 +39,28 @@ public class JINTRO extends JFrame {
                 areaTexto.setFont(new Font("Serif", Font.PLAIN, 14));
                 painel.add(areaTexto, BorderLayout.CENTER);
 
-                // Botão de ação
+
+
+
                 JButton btnCadastrar = new JButton("Cadastrar Jogador");
                 painel.add(btnCadastrar, BorderLayout.SOUTH);
 
-                // Criando um JOptionPane embutido num JDialog
-                JDialog dialog = new JDialog(JINTRO.this, "Introdução", true);
-                dialog.getContentPane().add(painel);
-                dialog.pack();
-                dialog.setLocationRelativeTo(JINTRO.this);
+                
+                JDialog d = new JDialog(JINTRO.this, "Introdução", true);
+                d.getContentPane().add(painel);
+                d.pack();
+                d.setLocationRelativeTo(JINTRO.this);
 
                 
                 btnCadastrar.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        dialog.dispose();
-                        new JCadastroJogador(); // Abre a janela de cadastro
+                        d.dispose();
+                        new JCadastroJogador();
                     }
                 });
 
-                dialog.setVisible(true);
+                d.setVisible(true);
             }
         });
 
